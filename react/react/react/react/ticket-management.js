@@ -1,4 +1,3 @@
-react/ticket-management.js
 // react/ticket-management.js
 
 // Get session token
@@ -100,3 +99,9 @@ document.getElementById("logout").addEventListener("click", () => {
 
 // Initial render
 renderTickets();
+const statusColors = {
+  open: "green",
+  in_progress: "orange",
+  closed: "gray"
+};
+card.querySelector("strong").style.color = statusColors[ticket.status];
