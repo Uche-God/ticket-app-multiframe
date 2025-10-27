@@ -1,0 +1,19 @@
+<!-- shared-assets/hero-wave.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="waveGrad" x1="0" x2="1">
+      <stop offset="0%" stop-color="#5EEAD4" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#60A5FA" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <path fill="url(#waveGrad)" filter="url(#softShadow)" d="M0,96L60,101.3C120,107,240,117,360,133.3C480,149,600,171,720,202.7C840,235,960,277,1080,277.3C1200,277,1320,235,1380,213.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"/>
+  <g opacity="0.12">
+    <circle cx="110" cy="40" r="28" fill="#fff"/>
+    <circle cx="320" cy="22" r="18" fill="#fff"/>
+    <circle cx="570" cy="12" r="14" fill="#fff"/>
+  </g>
+</svg>
