@@ -1,0 +1,46 @@
+<!-- react/ticket-management.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Management</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ticket Management</h1>
+      <button id="logout" class="btn">Logout</button>
+    </header>
+
+    <section class="ticket-form">
+      <h2>Create / Edit Ticket</h2>
+      <form id="ticket-form">
+        <label>Title*:</label>
+        <input type="text" id="ticket-title" required>
+
+        <label>Status*:</label>
+        <select id="ticket-status" required>
+          <option value="">Select status</option>
+          <option value="open">Open</option>
+          <option value="in_progress">In Progress</option>
+          <option value="closed">Closed</option>
+        </select>
+
+        <label>Description:</label>
+        <textarea id="ticket-desc"></textarea>
+
+        <button type="submit" class="btn">Save Ticket</button>
+      </form>
+    </section>
+
+    <section class="ticket-list">
+      <h2>Tickets</h2>
+      <div id="tickets-container"></div>
+    </section>
+  </div>
+
+  <script src="./ticket-management.js"></script>
+</body>
+</html>
