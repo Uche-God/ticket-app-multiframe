@@ -1,3 +1,7 @@
+if (!localStorage.getItem("ticketapp_session")) {
+  alert("Please log in first!");
+  window.location.href = "./auth.html";
+}
 // react/dashboard.js
 
 // Simulated ticket data
