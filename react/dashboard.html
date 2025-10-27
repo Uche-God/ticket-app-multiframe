@@ -1,0 +1,39 @@
+<!-- react/dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket App - Dashboard</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Dashboard</h1>
+      <button id="logout" class="btn">Logout</button>
+    </header>
+
+    <section class="stats">
+      <div class="card">
+        <h2>Total Tickets</h2>
+        <p id="total-tickets">0</p>
+      </div>
+      <div class="card">
+        <h2>Open Tickets</h2>
+        <p id="open-tickets">0</p>
+      </div>
+      <div class="card">
+        <h2>Resolved Tickets</h2>
+        <p id="resolved-tickets">0</p>
+      </div>
+    </section>
+
+    <nav>
+      <a href="./ticket-management.html" class="btn">Manage Tickets</a>
+    </nav>
+  </div>
+
+  <script src="./dashboard.js"></script>
+</body>
+</html>
